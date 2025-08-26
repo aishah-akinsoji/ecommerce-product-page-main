@@ -13,37 +13,37 @@ export default function App() {
   const slides = [
     {
       id: 0,
-      src: "public/image-product-1.jpg",
+      src: "image-product-1.jpg",
     },
     {
         id: 1,
-        src: "public/image-product-2.jpg",
+        src: "image-product-2.jpg",
     },
     {
         id: 2,
-        src: "public/image-product-3.jpg",
+        src: "image-product-3.jpg",
     },
     {
         id: 3,
-        src: "public/image-product-4.jpg",
+        src: "image-product-4.jpg",
     }
   ]
   const thumbnails = [
       {
           id: 0,
-          src: "public/image-product-1-thumbnail.jpg",
+          src: "image-product-1-thumbnail.jpg",
       },
       {
           id: 1,
-          src: "public/image-product-2-thumbnail.jpg",
+          src: "image-product-2-thumbnail.jpg",
       },
       {
           id: 2,
-          src: "public/image-product-3-thumbnail.jpg",
+          src: "image-product-3-thumbnail.jpg",
       },
       {
           id: 3,
-          src: "public/image-product-4-thumbnail.jpg",
+          src: "image-product-4-thumbnail.jpg",
       }
   ]
   function prevSlide(){
@@ -117,13 +117,13 @@ export default function App() {
                         isCartEmpty ? <p>Your cart is empty. </p> : 
                                     <div className="product-list">
                                         <div className="product">
-                                            <div className="image"><img src="public/image-product-1-thumbnail.jpg"/></div>
+                                            <div className="image"><img src="image-product-1-thumbnail.jpg"/></div>
                                             <div className="cart-product-details">
                                                 <p>Fall Limited Edition Sneakers</p>
                                                 <p>${price} x {quantity} <b>${price * quantity}</b></p>
                                             </div>
                                             <div className="delete-btn">
-                                                <button onClick={deleteFromCart}><img src="public/icon-delete.svg" /></button>
+                                                <button onClick={deleteFromCart}><img src="icon-delete.svg" /></button>
                                             </div>
                                         </div>
                                         <button>Checkout</button>
@@ -136,10 +136,10 @@ export default function App() {
                         <img className="slide" onClick={displayLightBox} src={slides.length > 0 ? slides[slideIndex].src : ""}/>
                     </div>
                     <button className="arrow" id="prev" onClick={prevSlide}>
-                        <img src="public/icon-previous.svg" />
+                        <img src="icon-previous.svg" />
                     </button>
                     <button  className="arrow" id="next" onClick={nextSlide}>
-                        <img src="public/icon-next.svg" />
+                        <img src="icon-next.svg" />
                     </button>
                 </div>
                 <div className="thumbnails">
@@ -187,11 +187,11 @@ export default function App() {
                 </div>
                 <div className="cart-info">
                     <div className="product-quantity">
-                        <button className="subtract" onClick={substractQuantity}><img src="public/icon-minus.svg" /></button>
+                        <button className="subtract" onClick={substractQuantity}><img src="icon-minus.svg" /></button>
                         <div className="quantity">{quantity}</div>
-                        <button className="add" onClick={addQuantity}><img src="public/icon-plus.svg" /></button>
+                        <button className="add" onClick={addQuantity}><img src="icon-plus.svg" /></button>
                     </div>
-                    <button className="add-to-cart-btn" onClick={addToCart}><img src="public/icon-cart.svg" />Add to cart</button>
+                    <button className="add-to-cart-btn" onClick={addToCart}><img src="icon-cart.svg" />Add to cart</button>
                 </div>
             </div>
         </div>

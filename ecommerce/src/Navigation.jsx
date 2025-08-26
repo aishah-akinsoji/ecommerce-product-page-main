@@ -11,8 +11,8 @@ export function Navigation({ toggleCart, quantity }) {
         <nav>
             <div className="nav-content">
                 <div className="nav-container">
-                    <div className="menu-icon"><img onClick={openNav} src="public/icon-menu.svg" /></div>
-                    <div className="logo"><img src="public/logo.svg" /></div>
+                    <div className="menu-icon"><img onClick={openNav} src="icon-menu.svg" /></div>
+                    <div className="logo"><img src="logo.svg" /></div>
                 </div>
                 <div className="responsive">
                     <a href="#">Collections</a>
@@ -24,7 +24,7 @@ export function Navigation({ toggleCart, quantity }) {
                 <div className="nav-links-section" style={{display: isOpen ? "flex" : "none"}}>
                     <div className="nav-links-container" >
                         <div className="close">
-                            <img src="public/icon-close.svg" onClick={closeNav}/>
+                            <img src="icon-close.svg" onClick={closeNav}/>
                         </div>
                         <div className="nav-links">
                             <a href="#">Collections</a>
@@ -38,10 +38,10 @@ export function Navigation({ toggleCart, quantity }) {
             </div>
             <div className="nav-icons">
                 <div className="cart-wrapper" onClick={toggleCart}>
-                    <img className='cart-icon' src="public/icon-cart.svg" />
+                    <img className='cart-icon' src="icon-cart.svg" />
                     <span className='cart-badge'>{quantity}</span>
                 </div>
-                <div className="profile-img"><img src="public/image-avatar.png" /></div>
+                <div className="profile-img"><img src="image-avatar.png" /></div>
             </div>
         </nav>
     )
